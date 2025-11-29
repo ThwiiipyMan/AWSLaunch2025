@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login/Register Panel -->
+        <div class="auth-panel" id="authPanel">
+            <div class="toggle-buttons">
+                <button class="toggle-btn active" id="loginBtn">Login</button>
+                <button class="toggle-btn" id="registerBtn">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <div class="form-container active" id="loginForm">
+                <h2>Welcome Back</h2>
+                <p class="subtitle">Please login to your account</p>
+                <form>
+                    <div class="input-group">
+                        <input type="email" id="loginEmail" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div class="form-container" id="registerForm">
+                <h2>Create Account</h2>
+                <p class="subtitle">Sign up to get started</p>
+                <form>
+                    <div class="input-group">
+                        <input type="text" id="registerName" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="registerEmail" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="registerPassword" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Welcome Panel -->
+        <div class="welcome-panel" id="welcomePanel">
+            <div class="welcome-content">
+                <div class="welcome-icon">👋</div>
+                <h1 class="welcome-title">Hi, <span id="userName">New User</span>!</h1>
+                <p class="welcome-message">Welcome to your dashboard. We're excited to have you here!</p>
+                <button class="logout-btn" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
